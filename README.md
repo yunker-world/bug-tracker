@@ -18,8 +18,7 @@ This is a bug tracker project build in Next.js 14.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/fy51/bug-tracker.git
-
+   git clone https://github.com/yunker-world/bug-tracker.git
    ```
 
 2. Install dependencies using npm
