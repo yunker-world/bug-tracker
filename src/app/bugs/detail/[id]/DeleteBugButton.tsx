@@ -11,8 +11,6 @@ const DeleteBugButton = ({ bugId }: { bugId: number }) => {
   const [error, setError] = useState(false);
   const router = useRouter();
 
-  console.log("=================>DeleteBugButton");
-
   const deleteBug = async () => {
     try {
       setIsDeleting(true);

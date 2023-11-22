@@ -10,7 +10,6 @@ const links = [
 
 const NavLinks = () => {
   const currentPath = usePathname();
-  console.log(currentPath);
 
   return (
     <ul className="flex space-x-6">
