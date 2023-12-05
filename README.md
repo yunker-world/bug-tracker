@@ -1,6 +1,6 @@
 # Bug Tracker
 
-This is a bug tracker project build in Next.js 14. [Demo](https://bug-tracker-mauve-three.vercel.app/)
+This is a bug tracker project build in Next.js 14. [Demo](https://bug.yunker.me/)
 
 ## Tech Stack
 
