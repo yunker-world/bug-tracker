@@ -26,7 +26,7 @@ const LatestBugs = async () => {
               <Table.Cell>
                 <Flex justify="between">
                   <Flex direction="column" align="start" gap="2">
-                    <Link href={`/bugs/${bug.id}`}>{bug.title}</Link>
+                    <Link href={`/bugs/detail/${bug.id}`}>{bug.title}</Link>
                     <StatusBadge status={bug.status} />
                   </Flex>
                   {bug.user && (
