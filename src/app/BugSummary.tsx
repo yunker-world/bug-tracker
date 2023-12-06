@@ -15,23 +15,26 @@ const BugSummary = ({ open, inProgress, closed }: Props) => {
     status: Status;
   }[] = [
     { label: "Open Bugs", value: open, status: "OPEN" },
-    { label: "In-progress Bus", value: inProgress, status: "IN_PROGRESS" },
+    { label: "In-progress Bugs", value: inProgress, status: "IN_PROGRESS" },
     { label: "Closed Bugs", value: closed, status: "CLOSED" },
   ];
 
   return (
     <Flex gap="4">
       {cards.map((card) => (
-        <Link key={card.status} href={`/bugs/list?status=${card.status}`}>
-          <Card>
-            <Flex direction="column" gap="5">
+        <Card key={card.status}>
+          <Link
+            href={`/bugs/list?status=${card.status}`}
+            className="text-sm font-medium"
+          >
+            <Flex direction="column" gap="2">
               {card.label}
-              <Text size="5" className="font-bold">
+              <Text size="5" className="font-bold text-center">
                 {card.value}
               </Text>
             </Flex>
-          </Card>
-        </Link>
+          </Link>
+        </Card>
       ))}
     </Flex>
   );
